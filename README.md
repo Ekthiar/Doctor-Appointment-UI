@@ -22,7 +22,7 @@ Built with **HTML5 & CSS3** for practice purposes.
 ---
 
 ## Live Demo
-🔗 [View Live Website](https://your-github-username.github.io/your-repo-name/)
+🔗 [View Live Website](https://ekthiar.github.io/Doctor-Appointment-UI/)
 
 ---
 
