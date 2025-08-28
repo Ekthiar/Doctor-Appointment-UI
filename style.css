@@ -1,0 +1,268 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    background-color: #127A72;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-size: 70px;
+    font-weight: 500px;
+    color: white;
+    padding-left: 40px;
+}
+.manu{
+    display: flex;
+    padding-right: 20px;
+    
+}
+.manu ul{
+    display: flex;
+}
+.manu ul li{
+    list-style: none;
+    padding: 10px;
+}
+.manu ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+/* main section */
+
+.home-page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 90vh;
+}
+
+.home-page .banner-cotainer img{
+    position: relative;
+    right: 0;
+    width: 700px;
+    height: 700px;
+    bottom: 0;
+
+}
+.home-page .text-container{
+    text-align: center;
+    margin: 0 40px;
+
+}
+.home-page .text-container h1{
+    text-transform:capitalize;
+    color: #127A72;
+    font-size: 60px;
+    padding: 0 60px;
+}
+.home-page .text-container p{
+    font-size: 20px;
+    margin-top: -25px;
+    padding: 0 10px;
+}
+button{
+    padding: 14px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.button1{
+    background-color: #02CB9D;
+}
+.button2{
+    background-color: #177B7B;
+}
+.buttons button:hover{
+    box-shadow: 4px 4px 10px black;
+    transition-duration: 0.5s;
+}
+
+/* Services Section */
+.services-section{
+    /* height: 90vh; */
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+ h1{
+    color: #127A72;
+    font-size: 60px;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+
+}
+.card{
+    width: 250px;
+    height: 380px;
+    /* border: 1px solid black; */
+    padding-top: 10px;
+    box-shadow: 4px 4px 10px;
+    border-radius: 10px;
+
+}
+.card img{
+    width: 60%;
+}
+.card h3{
+    padding-top: -13px;
+    font-size: 25px;
+}
+.card p{
+    font-size: 16px;
+    padding: 0 20px;
+}
+
+/* Contact Section */
+.contact-section{
+    width: 100%;
+    text-align: center;
+}
+.text-box input , textarea{
+    width: 300px;
+    height: 50px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 16px;
+    color: gray;
+    vertical-align: middle;
+}
+
+/* footer section */
+footer{
+    background-color: #127A72;
+}
+.information-container{
+    
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+}
+.information-container div{
+    width: 20%;
+    padding: 15px;
+    
+}
+.information-container div ul{
+    list-style: none;
+    padding: 0;
+}
+.information-container div ul li{
+    padding-top: 10px;
+}
+.information-container div ul li a{
+    color: white;
+    text-decoration: none;
+}
+.copy-right{
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+.footer-line{
+    border: none;
+    border-top: 0.2px solid white;
+    width: 80%;
+    margin: auto;
+}
+
+/* ----------------- Responsive ----------------- */
+
+/* Tablet */
+@media (max-width: 991px){
+    .home-page{
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 20px;
+    }
+    .home-page .text-container h1{
+        font-size: 40px;
+        padding: 0;
+    }
+    .home-page .banner-cotainer img{
+        width: 400px;
+    }
+    .services-section h1{
+        font-size: 40px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px){
+    header{
+        height: auto;
+        padding: 10px 0;
+    }
+    .logo{
+        font-size: 30px;
+        padding-left: 10px;
+    }
+    .manu ul{
+        align-items: center;
+        padding: 10px;
+    }
+    .manu ul li{
+        padding: 5px 5px;
+    }
+
+    .home-page{
+        flex-direction: column-reverse;
+        padding: 0px 10px;
+    }
+    .home-page .text-container h1{
+        font-size: 32px;
+    }
+    .home-page .text-container p{
+        padding-top: 10px;
+        font-size: 16px;
+    }
+
+    .home-page .banner-cotainer img{
+        width: 94%;
+        height: auto;
+    }
+
+    .services-section h1{
+        font-size: 32px;
+    }
+    .cards{
+        flex-direction: column;
+    }
+    .card{
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .information-container{
+        flex-direction: column;
+        text-align: center;
+    }
+    .information-container div{
+        width: 100%;
+    }
+    .footer-line{
+        width: 90%;
+    }
+}
+
